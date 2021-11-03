@@ -1,0 +1,6 @@
+export let botonFormulario=$('#botonGuardar')
+export let nombre=$('#nombre')
+export let tipo=$("#tipo")
+export let numero=$("#numero")
+export let direccion=$("#direccion")
+export let nacimiento=$("#nacimiento")

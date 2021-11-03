@@ -1,0 +1,98 @@
+:root {
+    --colorTituloFormularioBackground: red;
+    --colorTituloFormularioLetra: black;
+    --colorTituloTable:white;
+    --colorTituloTableBackground:#06204a;
+    --fondoFilas:#8080803b;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* estilos generales */
+.colorFondo{
+    background: var(--colorTituloFormularioBackground);
+}
+
+
+/* contenedor principal */
+.contendor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/* contenedor 1*/
+.contendor__formulario{
+    margin-right: .7rem;
+    border: 0.5px dashed gray;
+    
+
+}
+.contendor__texto{
+    margin: 0;
+    padding: 10px;
+    background: var(--colorTituloFormularioBackground);
+    color: var(--colorTituloFormularioLetra);
+    text-align: center;
+}
+/* estilos del formulario */
+.formulario__espacio{
+    margin: 0.5rem;
+}
+.formulario__campo{
+    outline: none;
+    margin-bottom: 5px;
+    width: 250px;
+    height: 20px;
+}
+.formulario__ampliando{
+    width: 258px;
+}
+.formulario__ampliandoData{
+    width: 252px;
+}
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+}
+.formulario__boton{
+    width: 100%;
+    background: var(--colorTituloTableBackground);
+    color: white;
+}
+/* contenedor2 y table */
+.resultado,tr,td,th{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 7px;
+
+}
+.resultado__filas:nth-child(even){
+    background: var(--fondoFilas);
+}
+.resultado__titulo{
+    background:var(--colorTituloTableBackground);
+    color: var(--colorTituloTable);
+}
+.contenedorBoton__boton{
+    padding: 4px;
+    color: white;
+    outline: none;
+    border: 1px solid gray;
+}
+@media (max-width:768px){
+    .contendor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .contendor__formulario{
+        width: 274px;
+    }
+}

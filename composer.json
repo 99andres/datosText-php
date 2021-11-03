@@ -1,0 +1,19 @@
+{
+    "name": "cheli/prueba-trabajo",
+    "autoload": {
+        "file": [
+            "src/proceso/GetData.php"
+        ],
+        "psr-4": {
+            "App\\": "src/"
+            
+        }
+    },
+    "authors": [
+        {
+            "name": "andres99",
+            "email": "andresdesarrollador9@gmail.com"
+        }
+    ],
+    "require": {}
+}
